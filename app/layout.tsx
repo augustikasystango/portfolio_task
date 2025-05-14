@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import MainHeaderComponent from "@/components/main-header";
 import { ReactQueryProvider } from "@/components/ReactQueryProvider";
 import "./globals.css";
 
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReactQueryProvider>
-      
+         <MainHeaderComponent/>
           {children}
           </ReactQueryProvider>
       </body>
